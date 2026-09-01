@@ -1,0 +1,30 @@
+# ---- Entorno virtual de Python ----
+.venv/
+venv/
+env/
+
+# ---- Caché de Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Jupyter (para cuando lo usemos) ----
+.ipynb_checkpoints/
+
+# ---- Datos pesados o generados (los datasets pequeños de ejemplo SÍ se suben) ----
+*.parquet
+*.h5
+datos-grandes/
+
+# ---- Modelos entrenados ----
+*.pkl
+*.joblib
+*.pt
+*.onnx
+
+# ---- Sistema operativo / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
