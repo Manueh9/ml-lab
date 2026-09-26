@@ -12,6 +12,24 @@ Cada lab es reproducible: clona, crea el entorno, y sigue su README.
 
 ---
 
+## Ruta de aprendizaje
+
+El objetivo no es ser científico de datos, sino **saber llevar un modelo a producción**: entrenarlo con datos en condiciones, servirlo en una API y mantenerlo vivo. La ruta va de los datos al despliegue.
+
+| # | Tema | De qué va | Estado |
+|---|---|---|---|
+| 1 | Fundamentos de pandas | Cargar, filtrar, ordenar y agrupar: los datos como una tabla | ✅ Hecho |
+| 2 | Limpieza de datos | Nulos y tipos: dejar los datos listos antes de que lleguen a un modelo | 🟢 En curso |
+| 3 | Visualización (matplotlib) | Ver los datos antes de modelar: distribuciones, relaciones, valores raros | 🔜 Pendiente |
+| 4 | Primer modelo (scikit-learn) | Entrenar, evaluar con datos que el modelo no ha visto y guardarlo | 🔜 Pendiente |
+| 5 | Servir el modelo | Envolverlo en una API (`POST /predict` con FastAPI) y empaquetarlo en un contenedor | 🔜 Pendiente |
+| 6 | MLOps | Registrar experimentos y modelos (MLflow), reentrenar y desplegar con un pipeline, vigilar la deriva | 🔜 Pendiente |
+| 7 | Azure Machine Learning | Lo mismo, sobre la plataforma gestionada de la nube | 🔜 Pendiente |
+| 8 | Proyecto final | Un modelo útil de verdad —detectar certificados anómalos— en producción junto a una aplicación real | 🔜 Pendiente |
+
+---
+
+
 ## Índice
 
 ### Apuntes
