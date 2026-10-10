@@ -38,13 +38,15 @@ El objetivo no es ser científico de datos, sino **saber llevar un modelo a prod
 |---|---|---|
 | 01 | [Fundamentos de pandas](apuntes/01-pandas-fundamentos.md) | Los datos como una tabla; diccionario SQL → pandas |
 | 02 | [Limpieza de datos](apuntes/02-limpieza-datos.md) | Nulos (NaN), las tres decisiones y los tipos de columna |
+| 03 | [Visualización con matplotlib](apuntes/03-visualizacion.md) | Figure y Axes, la interfaz explícita, y qué gráfico contesta a qué pregunta |
 
 ### Labs
 
 | # | Lab | Qué se practica | Estado |
 |---|---|---|---|
 | 01 | [Primer vistazo a pandas](labs/01-primer-vistazo-pandas/) | Cargar un CSV y hacer head/filter/sort/groupby | ✅ Hecho |
-| 02 | [Limpieza de datos (Titanic)](labs/02-limpieza-datos/) | Contar nulos, decidir, `to_numeric`, guardar limpio | ✅ Completo |
+| 02 | [Limpieza de datos (Titanic)](labs/02-limpieza-datos/) | Contar nulos, decidir, `to_numeric`, guardar limpio | ✅ Hecho |
+| 03 | [Visualización](labs/03-visualizacion/) | Tres gráficos del Titanic limpio, guardados como PNG | ✅ Hecho|
 ---
 
 ## Roadmap (orden previsto)
