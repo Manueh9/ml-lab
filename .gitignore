@@ -28,3 +28,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+.venv/
+titanic.csv
+titanic_limpio.csv
+__pycache__/
