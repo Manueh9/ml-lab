@@ -19,16 +19,15 @@ El objetivo no es ser científico de datos, sino **saber llevar un modelo a prod
 | # | Tema | De qué va | Estado |
 |---|---|---|---|
 | 1 | Fundamentos de pandas | Cargar, filtrar, ordenar y agrupar: los datos como una tabla | ✅ Hecho |
-| 2 | Limpieza de datos | Nulos y tipos: dejar los datos listos antes de que lleguen a un modelo | 🟢 En curso |
-| 3 | Visualización (matplotlib) | Ver los datos antes de modelar: distribuciones, relaciones, valores raros | 🔜 Pendiente |
-| 4 | Primer modelo (scikit-learn) | Entrenar, evaluar con datos que el modelo no ha visto y guardarlo | 🔜 Pendiente |
+| 2 | Limpieza de datos | Nulos y tipos: dejar los datos listos antes de que lleguen a un modelo | ✅ Hecho |
+| 3 | Visualización (matplotlib) | Ver los datos antes de modelar: distribuciones, relaciones, valores raros | ✅ Hecho |
+| 4 | Primer modelo (scikit-learn) | Entrenar, evaluar con datos que el modelo no ha visto y guardarlo | 🟢 En curso — entrenado y evaluado; falta guardarlo |
 | 5 | Servir el modelo | Envolverlo en una API (`POST /predict` con FastAPI) y empaquetarlo en un contenedor | 🔜 Pendiente |
 | 6 | MLOps | Registrar experimentos y modelos (MLflow), reentrenar y desplegar con un pipeline, vigilar la deriva | 🔜 Pendiente |
 | 7 | Azure Machine Learning | Lo mismo, sobre la plataforma gestionada de la nube | 🔜 Pendiente |
 | 8 | Proyecto final | Un modelo útil de verdad —detectar certificados anómalos— en producción junto a una aplicación real | 🔜 Pendiente |
 
 ---
-
 
 ## Índice
 
@@ -37,37 +36,25 @@ El objetivo no es ser científico de datos, sino **saber llevar un modelo a prod
 | # | Apunte | De qué va |
 |---|---|---|
 | 01 | [Fundamentos de pandas](apuntes/01-pandas-fundamentos.md) | Los datos como una tabla; diccionario SQL → pandas |
-| 02 | [Limpieza de datos](apuntes/02-limpieza-datos.md) | Nulos (NaN), las tres decisiones y los tipos de columna |
-| 03 | [Visualización con matplotlib](apuntes/03-visualizacion.md) | Figure y Axes, la interfaz explícita, y qué gráfico contesta a qué pregunta |
+| 02 | [Limpieza de datos](apuntes/02-limpieza-datos.md) | Nulos, tipos y duplicados; las decisiones de limpieza del Titanic |
+| 03 | [Visualización con matplotlib](apuntes/03-visualizacion.md) | Figure y Axes, la interfaz explícita y qué gráfico contesta a qué pregunta |
+| 04 | [El primer modelo](apuntes/04-primer-modelo.md) | fit/predict, train/test split, la línea base, por qué la accuracy engaña y la fuga de datos |
 
 ### Labs
 
 | # | Lab | Qué se practica | Estado |
 |---|---|---|---|
 | 01 | [Primer vistazo a pandas](labs/01-primer-vistazo-pandas/) | Cargar un CSV y hacer head/filter/sort/groupby | ✅ Hecho |
-| 02 | [Limpieza de datos (Titanic)](labs/02-limpieza-datos/) | Contar nulos, decidir, `to_numeric`, guardar limpio | ✅ Hecho |
-| 03 | [Visualización](labs/03-visualizacion/) | Tres gráficos del Titanic limpio, guardados como PNG | ✅ Hecho|
----
-
-## Roadmap (orden previsto)
-
-De los datos al modelo, sin saltarse pasos:
-
-1. **Fundamentos de datos con pandas** ← estoy aquí
-2. Limpieza de datos (nulos, tipos, duplicados)
-3. Visualización básica (matplotlib)
-4. Estadística mínima para entender un modelo
-5. Primer modelo supervisado (scikit-learn) de principio a fin
-6. **Proyecto pequeño de ML end-to-end** (la meta del track)
-
-Un tema por sesión, sin prisa.
+| 02 | [Limpieza del Titanic](labs/02-limpieza-datos/) | Decidir los nulos uno por uno y arreglar tipos | ✅ Hecho |
+| 03 | [Visualización](labs/03-visualizacion/) | Tres gráficos del Titanic limpio, guardados como PNG | ✅ Hecho |
+| 04 | [Primer modelo](labs/04-primer-modelo/) | Regresión logística contra una línea base: 0,798 frente a 0,618 | ✅ Hecho |
 
 ---
 
 ## Entorno
 
-- Python 3 en una VM Ubuntu Server.
-- Dependencias dentro de un **entorno virtual** (`.venv`, ver README de cada lab).
+- Python 3 en un entorno virtual (`.venv`, ver README de cada lab).
+- Dependencias en `requirements.txt`: pandas, matplotlib y scikit-learn.
 - Por ahora, scripts `.py`. Cuando lleguemos a la fase de proyecto, se valorará pasar a
   Jupyter para la parte de exploración y gráficas.
 
